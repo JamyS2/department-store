@@ -1,0 +1,27 @@
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+    <div class="field">
+        <div class="field-body">
+            <div class="field is-narrow">
+                <p class="control">
+                    <input type="number" required name="amount" style="width: 100px;" class="input" placeholder="Amount" [ngModel]="item.amount">
+                </p>
+            </div>
+
+            <div class="field">
+                <p class="control">
+                    <input type="text" required name="itemName" class="input" placeholder="Store Item" [ngModel]="item.itemName">
+                </p>
+            </div>
+
+            <div class="field">
+                <p>Is this a book, food, or medical product?</p>
+                <input required class="radio-button" style="margin-left: 0;" type="radio" [value]="true" name="isExempt" [ngModel]="item.isExempt">Yes
+                <input required class="radio-button" type="radio" [value]="false" name="isExempt" [ngModel]="item.isExempt">No
+            </div>
+            
+            <div class="field is-narrow">
+                <button type="submit" class="button is-primary" [disabled]="!itemForm.valid">Add</button>
+            </div>
+        </div>
+    </div>
+</form>

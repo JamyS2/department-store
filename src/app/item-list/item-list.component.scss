@@ -1,0 +1,35 @@
+@import '../../main-styles.scss';
+
+.items-section {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    
+    .items-container {
+        display: flex;
+        max-width: 680px;
+        height: 100%;
+        width: 100%;
+
+        .items-column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 0;
+            flex-grow: 1;
+
+            h1 {
+                font-family: 'Lato';
+                font-size: 24px;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+
+            .store-items {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+        }
+    }
+}

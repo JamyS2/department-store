@@ -1,0 +1,21 @@
+<div class="root">
+    <div class="item" *ngIf="!item.isExempt;else exempted">
+        <div class="description">
+            <p>{{ item.itemName }}</p>
+        </div>
+        <div class="amount">
+            <p>{{ item.amount }}</p>
+        </div>
+    </div>
+    <ng-template #exempted>
+        <div class="item" data-tooltip="This item is exempted from basic sales tax">
+            <div class="description">
+                <p>{{ item.itemName }}</p>
+            </div>
+            <div class="amount">
+                <p>{{ item.amount }}</p>
+            </div>
+        </div>
+    </ng-template>
+    <div class="x-icon-button" (click)="onXButtonClick()"></div>
+</div>

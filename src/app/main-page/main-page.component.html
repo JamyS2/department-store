@@ -1,0 +1,18 @@
+<div class="top-bar">
+    <h1>Department Store</h1>
+</div>
+
+<div class="total-budget-section">
+    <h2 class="red" style="width: 15%;">Sales Tax: {{ totalTax }}</h2>
+    <h2 class="green" style="width: 15%;">Grand Total: {{ total }}</h2>
+</div>
+
+<section class="add-item-section">
+    <div class="add-item-container">
+        <app-add-item-form style="padding: 20px;" (formSubmit)="addItem($event)"></app-add-item-form>
+    </div>
+</section>
+
+<hr style="margin-top: 0;">
+
+<app-item-list [items]="items" (delete)="deleteItem($event)"></app-item-list>
