@@ -86,10 +86,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Notes and Resources
 
-This project was with Bulma CSS Framework. The link below will provide documentation and style guides:
+This project was with Bulma CSS Framework. The link below will provide documentation and style guides:  
 https://bulma.io/
 
-To install Bulma:
+To install Bulma:  
 npm install bulma
 
-This project's main layout is based on https://github.com/Devstackr/budget-app-angular
+This project's main layout is based on:  
+https://github.com/Devstackr/budget-app-angular
