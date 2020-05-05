@@ -60,6 +60,23 @@ Simply start your local server (instructions below).
 
 Add all the input values from the test cases above. You will get the correct output result.
 
+
+Output 1
+
+![Output_1](https://user-images.githubusercontent.com/10455912/81032136-74b20c00-8e43-11ea-9b19-1838a175f9d0.png)
+
+
+Output 2
+
+![Output_2](https://user-images.githubusercontent.com/10455912/81032122-6a900d80-8e43-11ea-9315-6208c7bc6968.png)
+
+
+Output 3
+
+![Output_3](https://user-images.githubusercontent.com/10455912/81031891-c0b08100-8e42-11ea-997c-a9443f70f7f1.png)
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
